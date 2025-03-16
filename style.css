@@ -6,49 +6,52 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-size: 1rem;
 }
 
 /* Estilos para o header */
 header {
     background: linear-gradient(to right, #000, #fff);
     color: #000;
-    padding: 20px 0;
+    padding: 1.25rem 0; /* Usar unidades relativas */
     text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    min-height: 100px; /* Establece una altura mínima para el header */
-    border-radius: 40px;
+    min-height: 6.25rem; /* Usar unidades relativas */
+    border-radius: 2.5rem;
 }
 
-h2{
-    text-align: center;
-    font-size: 24px; /* Tamaño del título */
-    margin-bottom: 20px; /* Espacio debajo del título */
-    font-weight: bold;
-    color: #e2e2e2;
+#imagen-derecha {
+    position: absolute;
+    right: 15.625rem; /* Usar unidades relativas */
+    top: 9.375rem; /* Usar unidades relativas */
+    width: 9.375rem; /* Usar unidades relativas */
+    cursor: default;
 }
+
+
 @font-face {
         font-family: 'ProseSansDemo';
         src: url('fonts/ProseSansDemo-Medium.otf') format('opentype');
     }
 
-#Header-S{
-    font-family: 'ProseSansDemo', sans-serif;
-    font-size: 45px;
+#Header-S {
+        font-family: 'ProseSansDemo', sans-serif;
+        font-size: 2.8125rem; /* Usar unidades relativas */
 }
 
-.logo-samsung{
-    width: 210px; /* Ajuste este valor según sea necesario */
+#logo-samsung {
+    width: 13.125rem; /* Usar unidades relativas */
     position: absolute;
     top: 60%;
     transform: translateY(-50%);
-    left: 50px;
-    top: 75px;
-
+    left: 3.125rem; /* Usar unidades relativas */
+    top: 4.6875rem; /* Usar unidades relativas */
 }
-.logo-apple{
+
+#logo-apple{
     width: 75px; /* Ajuste este valor según sea necesario */
     position: absolute;
     top: 50%;
@@ -57,8 +60,8 @@ h2{
 
 }
 
-.logo-samsung img,
-.logo-apple img {
+#logo-samsung img,
+#logo-apple img {
     width: 100%; /* Asegura que la imagen ocupe el 100% del ancho del contenedor */
     height: auto;
 }
@@ -68,6 +71,14 @@ header h1 {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1; /* Asegura que el h1 esté por encima de los logos */
+}
+
+h2{
+    text-align: center;
+    font-size: 24px; /* Tamaño del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-weight: bold;
+    color: #e2e2e2;
 }
 
 main {
@@ -116,7 +127,6 @@ main {
     transition: color 0.3s ease;
 }
 
-/* Uso de seletores de classe e ID */
 .intro {
     background-color: #e2e2e2;
     padding: 15px;
@@ -149,8 +159,74 @@ section {
     padding: 20px;
     border-radius: 25px; /* Bordes redondeados */
     box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.1); /* Sombra sutil para un toque moderno */
+
 }
 
+
+
+#opinion {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#opinion h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#opinion p {
+    font-size: 16px;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+button[type="submit"] {
+    background-color: #0C23A1;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #092079;
+}
 
 
 /* Adição de cores e fundos */
