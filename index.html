@@ -8,14 +8,18 @@
 </head>
 <body>
     <header>
-        <div class="logo-samsung">
+        <div id="logo-samsung">
             <img src="imagens/samsung-logo.png" alt="Logo Samsung">
         </div>
-        <h1 id="Header-S">Samsung vs iPhone</h1>
-        <div class="logo-apple">
+        <h1 id="Header-S"> VS </h1>
+        <div id="logo-apple">
             <img src="imagens/apple_logo.png" alt="Logo iPhone">
         </div>
     </header>
+    <div id="imagen-derecha">
+        <img src="imagens/S25 (2).png" alt="S25">
+    </div>
+
     <main>
         <div id="menu-lateral">
             <h2 >Loja Samsung</h2>
@@ -95,27 +99,34 @@
             </div>
         </section>
         <section id="opinion">
-            <h2>Dê sua opnião</h2>
-            <label for="opcao">Você prefere Samsung Galaxy S24 Ultra ou iPhone 15 Pro Max :</label>
+            <h2>Dê sua opinião</h2>
+        
+            <p>Qual dispositivo você prefere?</p>
+            <label for="opcao">Escolha entre Samsung Galaxy S24 Ultra e iPhone 15 Pro Max:</label>
             <br><br>
-
-               <select id="opcao" name="opcao">
-                  <option value="opcao1">Samsung Galaxy S24 Ultra</option>
-                  <option value="opcao2">iPhone 15 Pro Max</option>
-                 </select>
-                 <br><br>
-
+        
+            <select id="opcao" name="opcao">
+                <option value="opcao1">Samsung Galaxy S24 Ultra</option>
+                <option value="opcao2">iPhone 15 Pro Max</option>
+            </select>
+            <br><br>
+        
             <form action="Enviar" method="post">
-            <label for="nome">Nome: </label>
-            <input type="text" id="nome" name="nome" required>
-
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-             <br><br>
-            <button type="submit">Enviar </button>
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+                <br>
+                
+                <button type="submit">Enviar</button>
             </form>
-
         </section>
+        
     </main>
     <footer>
         <p>&copy; 2025 Comparação Samsung vs iPhone</p>
