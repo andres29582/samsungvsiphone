@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Añadido para diseño responsivo -->
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script> 
+</head>
+<body>
+
+    <main>
+    <div class="mi-imagen">
+        <img src="imagens/logo.png" alt="logo/login" id="logo-login">
+    </div>
+        <section id="login-container">
+            <h2>Iniciar Sesión</h2>
+            <form id="login-form"> 
+                <div class="form-group">
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required>
+                </div>
+
+                <button type="submit">Ingresar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
